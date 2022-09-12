@@ -17,8 +17,7 @@ int main(void)
 
 	while (ch <= 9)
 	{
-		char output = ch+'0';
-		putchar(output);
+		putchar(ch+'0');
 		ch++;
 	}
 	putchar('\n');
