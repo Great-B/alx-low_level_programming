@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	char chl,chu;
+	char chl, chu;
 
 	chl = 'a';
 	chu = 'A';
