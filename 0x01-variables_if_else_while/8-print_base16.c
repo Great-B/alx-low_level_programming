@@ -19,7 +19,7 @@ int main(void)
 
 	while (ch <= 15)
 	{
-		if ((ch > 9) && (alpha <= 'f') && (ch <=15))
+		if ((ch > 9) && (alpha <= 'f') && (ch <= 15))
 		{
 			putchar(alpha);
 			alpha++;
