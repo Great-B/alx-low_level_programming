@@ -19,18 +19,17 @@ int main(void)
 
 	while (ch <= 15)
 	{
-		if (ch >= 10)
+		if ((ch > 9) && (alpha <= 'f') && (ch <=15))
 		{
-			while (alpha <= 'f')
-			{
-				putchar(alpha);
-				alpha++;
-			}
+			putchar(alpha);
+			alpha++;
 			ch++;
 		}
-
-		putchar(ch + '0');
-		ch++;
+		else
+		{
+			putchar(ch + '0');
+			ch++;
+		}
 	}
 	putchar('\n');
 	return (0);
