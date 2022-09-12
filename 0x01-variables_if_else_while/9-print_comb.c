@@ -11,15 +11,15 @@
  */
 int main(void)
 {
-	char ch;
+	int ch;
 
-	ch = '0';
+	ch = 0;
 
-	while (ch <= '9')
+	while (ch <= 9)
 	{
 		
-		putchar(ch);
-		if (ch != '9')
+		putchar(ch + '0');
+		if (ch != 9)
 		{
 			putchar(',');
 			putchar(' ');
