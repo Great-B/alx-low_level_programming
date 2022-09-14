@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  * _islower - user defined function
- *
+ * @c: the input argument to check
  * Description: to check if a character is lower case
  *
  * Return: 0 -false and 1 - true
