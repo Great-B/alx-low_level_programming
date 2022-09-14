@@ -14,15 +14,15 @@ int _islower(int c)
 {
 	int res;
 
-	if(islower(c))
+	if (islower(c))
 	{
 		res = 1;
-		return res;
+		return (res);
 	}
 	else
 	{
 		res = 0;
-		return res;
+		return (res);
 	}
 }
 
