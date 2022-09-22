@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strncpy - this function concatenate strings
@@ -11,25 +12,15 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptc;
+	int i;
 
-	/* check if dest has memory allocated */
-	if (dest == NULL)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		return (NULL);
+		dest[i] = src[i];
 	}
-
-	/* assign a pointer to the starting point of dest */
-	ptc = dest;
-
-	/* locate the terminal point for dest */
-	while (*src && n--)
+	while (i < n)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i++] = '\0';
 	}
-
-	*dest = '\0';
-	return (ptc);
+	return (dest);
 }
