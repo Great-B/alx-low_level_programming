@@ -12,9 +12,17 @@ char *_strchr(char *s, char c)
 {
 	char *p = NULL;
 
-	while ((*s != (char)c) && (*s != '\0'))
+	if (s != NULL)
 	{
-		p = ++s;
+		do
+		{
+			if (*s == (char)c)
+			{
+				p = s;
+				break;
+			}
+		}
+		while (*s++);
 	}
 	return (p);
 }
