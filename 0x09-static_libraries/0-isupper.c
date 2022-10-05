@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <ctype.h>
 
 /**
  * _isupper - writes the character c to stdout
@@ -7,4 +7,9 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately
  */
-int _isupper(int c);
+int _isupper(int c)
+{
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	return (0);
+}
