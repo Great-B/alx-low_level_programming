@@ -4,10 +4,12 @@
 
 /**
  * main - check the code for ALX School students.
+ * @argc: argument count
+ * @argv: argument vector
  *
  * Return: Always 0.
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
