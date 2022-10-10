@@ -1,17 +1,18 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
 
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+
 
 /* list of prototypes */
 int _putchar(char c);
-
+#ifndef dog
 struct dog {
 	char *name;
 	float age;
 	char *owner;
 };
+#endif
+
 
 #endif
