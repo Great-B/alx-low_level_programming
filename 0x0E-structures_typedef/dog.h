@@ -1,11 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 
-#include <stdio.h>
-
-
-/* list of prototypes */
-int _putchar(char c);
 typedef struct dog 
 {
 	char *name;
@@ -13,5 +8,4 @@ typedef struct dog
 	char *owner;
 } dog;
 
-
-#endif
+#endif /* DOG_H */
