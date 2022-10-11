@@ -7,7 +7,6 @@
  * @age: Third member
  * @owner:another member
  *
- * Description: Longer description
  * Return: nothing!
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
